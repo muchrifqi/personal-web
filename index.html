@@ -1,95 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./src/css/output.css" />
-    <title>Home</title>
-  </head>
-  <body class="font-sans max-w-xl mx-auto px-4 py-8">
-    <main class="max-w-3xl mx-auto px-6 py-2"></main>
-    <header class="mb-10">
-      <h1 class="text-4xl font-semibold text-gray-800">
+<html lang="en" class="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portofolio Muchamad Rifqi Hermawan, Web dev & Graphic designer in Bogor">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./src/css/output.css" />
+  <title>Home</title>
+</head>
+
+<body class="dark:bg-gray-900 dark:text-slate-100">
+  <main class="font-sans max-w-xl mx-auto px-4 py-8">
+    <header>
+      <h1
+        class="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-neutral-600 to-slate-800 drop-shadow-2xl dark:bg-gradient-to-r from-slate-400 to-white">
         Muchamad Rifqi Hermawan
       </h1>
-      <p class="text-sm text-gray-500">Teacher - Web Dev - Graphic Designer</p>
+      <p class="text-sm">Teacher - Web Dev - Graphic Designer</p>
     </header>
-      <!-- Hero -->
-      <section class="space-4-y mt-6 text-sm text-gray-800">
-        <h2 class="text-xl font-semibold mb-2">Tentang Saya</h2>
-        <p class="mb-2">
-          Mengajar, membuat website, dan desain grafis adalah beberapa hal yang
-          saya sukai. Saya menikmati proses kreatif dalam menciptakan sesuatu
-          yang bermanfaat dan menarik.
+    <main class="max-w-3xl mx-auto px-6 py-2"></main>
+    <!-- Hero -->
+    <section class="space-y-4 mt-6 text-sm">
+      <h2 class="text-xl font-semibold mb-2">Tentang Saya</h2>
+      <p class="mb-2">
+        Mengajar, membuat website, dan desain grafis adalah beberapa hal yang
+        saya sukai. Saya menikmati proses kreatif dalam menciptakan sesuatu
+        yang bermanfaat dan menarik.
+      </p>
+      <p>
+        Saya meyakini bahwa teknologi dapat menjadi alat yang kuat untuk
+        menginspirasi dan memberdayakan orang lain.
+      </p>
+    </section>
+    <!-- Projects -->
+    <section class="space-y-4 mt-6 text-sm">
+      <h2 class="text-xl font-semibold  mb-2">
+        Proyek Terbaru
+      </h2>
+      <ul class="list-disc list-inside mb-2">
+        <li class="mb-2">
+          <a href="https://shahaba-parents.web.app" class="text-blue-500 hover:underline">Shahaba Parents App</a>
+          <p class="ml-5 text-sm">
+            Sebuah aplikasi berbasis web (PWA) yang dirancang untuk membantu
+            orang tua dalam memantau perkembangan anak-anak mereka di sekolah.
+            Aplikasi ini menyediakan fitur laporan harian berupa catatan
+            presensi, daftar tugas, pengumuman, daftar transaksi keuangan,
+            galeri kegiatan, dan lainnya.
+          </p>
+        </li>
+        <li>
+          <a href="https://shahaba-presensi.web.app" class="text-blue-500 hover:underline">
+            Shahaba Presensi App
+          </a>
+          <p class="ml-5 text-sm">
+            Aplikasi pendata presensi pegawai berbasis web (PWA) dengan fitur
+            validasi lokasi GPS. Menampilkan pendataan presensi harian secara
+            real-time.
+          </p>
+        </li>
+      </ul>
+    </section>
+    <!-- Kontak -->
+    <section class="space-y-4 mt-6 text-sm ">
+      <h2 class="text-xl font-semibold">Kontak</h2>
+      <div class="flex flex-wrap gap-4">
+        <p class="text-xs">
+          <a href="mailto:mrifqi939@gmail.com"
+            class="inline-block border border-gray-300 px-5 py-2 rounded-full hover:bg-gray-50 transition">
+            mrifi939@gmail.com</a>
         </p>
-        <p>
-          Saya meyakini bahwa teknologi dapat menjadi alat yang kuat untuk
-          menginspirasi dan memberdayakan orang lain.
-        </p>
-      </section>
-      <!-- Projects -->
-      <section class="space-4-y mt-6 text-sm text-gray-800">
-        <h2 class="text-xl font-semibold text-gray-800 mb-2">
-          Proyek Terbaru
-        </h2>
-        <ul class="list-disc list-inside mb-2">
-          <li class="mb-2">
-            <a
-              href="https://shahaba-parents.web.app"
-              class="text-blue-500 hover:underline"
-              >Shahaba Parents App</a
-            >
-            <p class="ml-5 text-sm text-gray-700">
-              Sebuah aplikasi berbasis web (PWA) yang dirancang untuk membantu
-              orang tua dalam memantau perkembangan anak-anak mereka di sekolah.
-              Aplikasi ini menyediakan fitur laporan harian berupa catatan
-              presensi, daftar tugas, pengumuman, daftar transaksi keuangan,
-              galeri kegiatan, dan lainnya.
-            </p>
-          </li>
-          <li>
-            <a
-              href="https://shahaba-presensi.web.app"
-              class="text-blue-500 hover:underline"
-            >
-              Shahaba Presensi App
-            </a>
-            <p class="ml-5 text-sm text-gray-700">
-              Aplikasi pendata presensi pegawai berbasis web (PWA) dengan fitur
-              validasi lokasi GPS. Menampilkan pendataan presensi harian secara
-              real-time.
-            </p>
-          </li>
-        </ul>
-      </section>
-      <!-- Kontak -->
-      <section class="space-y-4 mt-6 text-sm text-gray-800">
-        <h2 class="text-xl font-semibold text-gray-800">Kontak</h2>
-        <div class="flex flex-wrap gap-4">
-        <p class="text-xs text-gray-700">
-          <a
-            href="mailto:mrifqi939@gmail.com"
-            class="inline-block border border-gray-300 px-5 py-2 rounded-full hover:bg-gray-50 transition"
-          >
-            mrifi939@gmail.com</a
-          >
-        </p>
-        <p class="text-xs text-gray-700">
-          <a
-            href="https://wa.me/6285695384530"
-            class="inline-block border border-gray-300 px-5 py-2 rounded-full hover:bg-gray-50 transition"
-          >
-            +62 856 9538 4530</a
-          >
+        <p class="text-xs">
+          <a href="https://wa.me/6285695384530"
+            class="inline-block border border-gray-300 px-5 py-2 rounded-full hover:bg-gray-50 transition">
+            +62 856 9538 4530</a>
         </p>
       </div>
-      </section>
-    </main>
-  </body>
+    </section>
+  </main>
+  <!-- style="background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475'); background-size: cover;" -->
+  <div class="max-w-xl mx-auto p-5 h-96 rounded-2xl border-gray-500 bg-[#ebebeb] mt-[42px]
+    overflow-y-auto bg-fixed" style="background-image: url('./src/img/milkyway.jpg')">
+    <p class="p-2 text-sm text-white">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos architecto tenetur facilis soluta, at quod.
+      Quos porro suscipit laudantium, corporis ducimus beatae? Dolore neque doloremque amet, quasi nostrum aliquid nulla
+      cum eligendi molestias reprehenderit quo repellendus veritatis nesciunt eveniet assumenda placeat quidem illo odio
+      tenetur ducimus minima dicta? Deleniti, fuga!
+    </p>
+    <p class="text-xs p-2 text-white">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam eaque voluptate voluptatum vero suscipit accusamus
+      repellat dicta iste! Voluptate hic laboriosam eius nesciunt commodi voluptatum veniam sunt, in doloribus sint.
+    </p>
+    <p class="text-sm italic p-2 text-white">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit aliquam nobis quis ex quo labore eligendi quos,
+      illum, omnis illo perspiciatis? Sint, nihil. Molestiae, maiores temporibus. Tempore praesentium adipisci tempora
+      dignissimos repellat beatae dicta, amet ut libero veniam totam, quos itaque, illum explicabo voluptatem nostrum
+      deserunt molestiae neque nulla asperiores non natus corrupti! Quibusdam dignissimos illo commodi cumque qui, quia
+      possimus. Ullam rerum, nulla officia cum ab laudantium incidunt enim reprehenderit, facilis, ratione iure voluptas
+      eligendi laborum ut eius vitae. Quibusdam ullam saepe autem cum tempore quisquam, mollitia ut obcaecati omnis qui
+      earum voluptas, neque amet incidunt ad illo sunt repellat in cumque est laborum enim, asperiores maiores?
+      Voluptatibus aspernatur beatae quis mollitia aliquam quisquam exercitationem? Esse asperiores ad saepe itaque
+      suscipit laborum fugit atque porro unde aspernatur eius non soluta distinctio, nostrum sint earum magni, debitis,
+      voluptates neque. Officiis ducimus sequi odit quam porro magni harum, obcaecati incidunt delectus.
+    </p>
+  </div>
+  <div class="m-12 flex max-w-xl mx-auto h-80 bg-slate-300 bg-cover rounded-t-xl
+    rounded-b-3xl shadow-xl shadow-slate-500 bg-no-repeat bg-center"
+    style="background-image: url(./src/img/daun.webp);">
+    <div class="flex h-60 w-60 m-auto rounded-2xl backdrop-blur-sm mx-auto bg-white/30">
+      <button
+        class="bg-cyan-600/50 shadow-lg text-white px-4 py-2 rounded-2xl text-sm m-auto block
+        hover:bg-cyan-600 active:bg-cyan-700 transition-all ease-in focus:ring focus:ring-sky-500 dark:bg-sky-800 dark:hover:bg-green-900">
+        Glassmorphism
+      </button>
+    </div>
+  </div>
+  <div
+    class="max-w-xl mx-auto rounded-2xl my-20 p-5 text-center font-semibold text-2xl bg-clip-text text-transparent bg-gradient-to-r from-gray-400 to-gray-700 shadow-sm">
+    <h3">
+      Pseudo Class Tailwind
+      </h3>
+  </div>
+  <div
+    class="max-w-xl p-5 my-20 border border-slate-300 rounded-2xl mx-auto shadow-md hover:bg-gray-100 group transition-all ease-in-out dark:hover:bg-gray-200">
+    <h5
+      class="font-bold text-stone-800 text-lg mb-3 group-hover:text-sky-900 dark:group-hover:text-gray-700 dark:text-gray-200">
+      Card with Tailwind CSS - 25 Oktober 2025
+    </h5>
+    <p
+      class="text-stone-500 group-hover:text-sky-800 selection:bg-gray-400 first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:float-left first-letter:mr-3 font-serif dark:text-gray-400 dark:group-hover:text-gray-500 dark:selection:bg-sky-200 transition-all ease-in">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro repellat pariatur, quos tempore quae nisi ab
+      consequuntur? Laboriosam consequuntur impedit nesciunt alias quod sint ipsam accusantium esse rerum. Impedit ipsum
+      voluptatum mollitia, provident in eum!
+    </p>
+  </div>
+  <div class="max-w-xl mx-auto border rounded-2xl border-gray-200 p-5 shadow-md my-8">
+    <form action="">
+      <span class="block text-base font-semibold mb-2 after:content-['*'] after:text-red-400 after:ml-0.5">Alamat
+        email</span>
+      <label for="email" id="email">
+        <input type="email" placeholder="Masukkan email.."
+          class="px-3 py-2 border rounded-xl shadow-md w-full block text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-sky-600 focus:border-green-400 invalid:text-pink-700 invalid:focus:ring-pink-500 invalid:focus:border-red-400 peer">
+        <p class="text-xs mt-2 ml-1 text-pink-700 invisible peer-invalid:visible dark:text-red-400">
+          Gunakan email yang valid
+        </p>
+      </label>
+    </form>
+  </div>
+  <div class="mb-80"></div>
+  <footer class="mt-6">
+    <p class="text-xs text-gray-400 text-center">
+      muchamad rifqi hermawan
+    </p>
+  </footer>
+</body>
+
 </html>
