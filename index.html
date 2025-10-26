@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
@@ -11,17 +11,21 @@
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="./src/css/output.css" />
+  <link rel="stylesheet" href="./src/css/styles.css" />
   <title>Home</title>
 </head>
 
-<body class="dark:bg-gray-900 dark:text-slate-100">
-  <main class="font-sans max-w-xl mx-auto px-4 py-8">
+<body class="text-gray-700 dark:bg-gray-900 dark:text-slate-100 transition-colors duration-500">
+  <main class="font-sans max-w-xl mx-auto px-4 py-8 mb-1">
     <header>
-      <h1
-        class="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-neutral-600 to-slate-800 drop-shadow-2xl dark:bg-gradient-to-r from-slate-400 to-white">
+      <h1 class="text-4xl font-bold bg-clip-text text-transparent 
+         bg-gradient-to-r from-neutral-600 to-slate-800 
+         dark:from-gray-300 dark:to-gray-400 
+         drop-shadow-2xl">
         Muchamad Rifqi Hermawan
       </h1>
-      <p class="text-sm">Teacher - Web Dev - Graphic Designer</p>
+
+      <p class="text-sm text-gray-400">Teacher - Web Dev - Graphic Designer</p>
     </header>
     <main class="max-w-3xl mx-auto px-6 py-2"></main>
     <!-- Hero -->
@@ -71,12 +75,12 @@
       <div class="flex flex-wrap gap-4">
         <p class="text-xs">
           <a href="mailto:mrifqi939@gmail.com"
-            class="inline-block border border-gray-300 px-5 py-2 rounded-full hover:bg-gray-50 transition">
+            class="inline-block border border-gray-300 px-5 py-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-300">
             mrifi939@gmail.com</a>
         </p>
         <p class="text-xs">
           <a href="https://wa.me/6285695384530"
-            class="inline-block border border-gray-300 px-5 py-2 rounded-full hover:bg-gray-50 transition">
+            class="inline-block border border-gray-300 px-5 py-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-300">
             +62 856 9538 4530</a>
         </p>
       </div>
@@ -114,7 +118,7 @@
     <div class="flex h-60 w-60 m-auto rounded-2xl backdrop-blur-sm mx-auto bg-white/30">
       <button
         class="bg-cyan-600/50 shadow-lg text-white px-4 py-2 rounded-2xl text-sm m-auto block
-        hover:bg-cyan-600 active:bg-cyan-700 transition-all ease-in focus:ring focus:ring-sky-500 dark:bg-sky-800 dark:hover:bg-green-900">
+        hover:bg-cyan-600 active:bg-cyan-700 focus:ring focus:ring-sky-500 dark:bg-sky-800 dark:hover:bg-green-900 transition-colors duration-300">
         Glassmorphism
       </button>
     </div>
@@ -125,14 +129,24 @@
       Pseudo Class Tailwind
       </h3>
   </div>
+  <div class="flex justify-center items-center space-x-2">
+    <span class="text-sm text-gray-400">Light</span>
+    <input type="checkbox" id="toggle">
+    <label for="toggle">
+      <div class="w-9 h-5 bg-gray-400 rounded-full flex items-center p-0.5 cursor-pointer">
+        <div class="w-4 h-4 bg-gray-200 rounded-full toggle-circle"></div>
+      </div>
+    </label>
+    <span class="text-sm text-gray-400">Dark</span>
+  </div>
   <div
-    class="max-w-xl p-5 my-20 border border-slate-300 rounded-2xl mx-auto shadow-md hover:bg-gray-100 group transition-all ease-in-out dark:hover:bg-gray-200">
+    class="max-w-xl p-5 my-20 border border-slate-300 rounded-2xl mx-auto shadow-md hover:bg-gray-100 dark:hover:bg-gray-200">
     <h5
       class="font-bold text-stone-800 text-lg mb-3 group-hover:text-sky-900 dark:group-hover:text-gray-700 dark:text-gray-200">
       Card with Tailwind CSS - 25 Oktober 2025
     </h5>
     <p
-      class="text-stone-500 group-hover:text-sky-800 selection:bg-gray-400 first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:float-left first-letter:mr-3 font-serif dark:text-gray-400 dark:group-hover:text-gray-500 dark:selection:bg-sky-200 transition-all ease-in">
+      class="text-stone-500 group-hover:text-sky-800 selection:bg-gray-400 first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:float-left first-letter:mr-3 font-serif dark:text-gray-400 dark:group-hover:text-gray-500 dark:selection:bg-sky-200">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro repellat pariatur, quos tempore quae nisi ab
       consequuntur? Laboriosam consequuntur impedit nesciunt alias quod sint ipsam accusantium esse rerum. Impedit ipsum
       voluptatum mollitia, provident in eum!
@@ -153,10 +167,17 @@
   </div>
   <div class="mb-80"></div>
   <footer class="mt-6">
-    <p class="text-xs text-gray-400 text-center">
+    <p class="text-xs text-gray-400 text-center mb-10">
       muchamad rifqi hermawan
     </p>
   </footer>
+  <script>
+    const checkbox = document.querySelector('#toggle')
+    const html = document.querySelector('html');
+    checkbox.addEventListener('click', function () {
+      checkbox.checked ? html.classList.add('dark') : html.classList.remove('dark');
+    })
+  </script>
 </body>
 
 </html>

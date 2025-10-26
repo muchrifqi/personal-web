@@ -1,0 +1,11 @@
+#toggle {
+  display: none;
+}
+
+#toggle:checked + label div.toggle-circle {
+  transform: translateX(16px); /* Sesuaikan jarak */
+}
+
+label div.toggle-circle {
+  transition: transform 0.2s ease;
+}
