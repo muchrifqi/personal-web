@@ -15,6 +15,13 @@ module.exports = {
       },
       animation: {
         "fade-in": "fade-in 0.7s ease-out forwards",
+        "spin-slow": "spin 3s linear infinite",
+      },
+      keyframes: {
+        goyang: {
+          "0%, 100%": { transform: "rotate (-3deg)" },
+          "50%": { transform: "rotate (3deg" },
+        },
       },
     },
   },
